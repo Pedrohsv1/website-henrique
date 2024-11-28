@@ -19,11 +19,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const interClassName = inter.className; // Garante consistência
+
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} text-green-950 bg-white antialiased`}
-      >
+      <body className={`${interClassName} text-green-950 bg-white antialiased`}>
         <Menu />
         {children}
       </body>
