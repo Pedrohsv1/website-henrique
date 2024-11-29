@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Menu = () => {
   return (
-    <div className="w-full flex justify-center items-center border border-gray-200">
+    <div className="w-full flex justify-center items-center border border-gray-200s">
       <div className="flex p-6 max-w-[1024px] w-full justify-between">
         <div className="flex gap-4">
           <Image
