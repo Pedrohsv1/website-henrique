@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${interClassName}  text-green-950 bg-white antialiased flex flex-col w-full min-h-screen  items-center `}
+        className={`${interClassName}  text-green-950 bg-white antialiased flex flex-col w-full min-h-screen  items-center scroll-smooth`}
       >
         <Menu />
         {children}

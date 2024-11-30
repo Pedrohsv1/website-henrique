@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
-// Tipagem para as props do componente PhotoGallery
 interface Photo {
   alt: string;
   url: string;
+  wh: number[];
 }
 
 interface PhotoGalleryProps {
@@ -12,97 +12,120 @@ interface PhotoGalleryProps {
 }
 
 export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0); // Índice da página atual
+  const [isPaused, setIsPaused] = useState(false); // Estado para pausar/despausar o carrossel
+  const [progress, setProgress] = useState(0); // Progresso da barra (0 a 100)
+  const totalPages = Math.ceil(photos.length / 5); // Total de páginas
+  const intervalTime = 4000; // Tempo para trocar de página (4 segundos)
 
-  // Define o padrão de larguras para a primeira linha
-  const firstRowPatterns = [
-    "w-[380px]", // Padrão para a 1ª imagem
-    "w-[200px]", // Padrão para a 2ª imagem
-    "w-[125px]", // Padrão para a 3ª imagem
-    "w-[220px]", // Padrão para a 4ª imagem
-    "w-[500px]", // Padrão para a 5ª imagem
-  ];
-
-  // Define o padrão de larguras para a segunda linha (invertido)
-  const secondRowPatterns = firstRowPatterns.slice().reverse();
-
-  // Calcula o número total de páginas (5 imagens por página)
-  const totalPages = Math.ceil(photos.length / 5);
-
-  // Função para atualizar o índice automaticamente a cada 5 segundos
+  // Atualiza automaticamente o índice quando o carrossel não está pausado
   useEffect(() => {
+    if (isPaused) return;
+
+    // Atualiza a barra de progresso e muda de página no final
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalPages);
-    }, 5000); // Troca a cada 5 segundos
+      setProgress((prevProgress) => {
+        if (prevProgress >= 100) {
+          setCurrentIndex((prevIndex) => {
+            return (prevIndex + 1) % totalPages;
+          });
+          return 0;
+        }
+        return prevProgress + 100 / (intervalTime / 100); // Incrementa progressivamente
+      });
+    }, 100); // Atualiza a cada 100ms
 
     return () => clearInterval(interval); // Limpa o intervalo ao desmontar
-  }, [totalPages]);
+  }, [isPaused, totalPages]);
 
-  // Função para dividir as fotos por grupos de 5
-  const currentPhotos = photos.slice(currentIndex * 5, (currentIndex + 1) * 5);
-
-  // Divide as fotos em duas linhas, considerando os padrões
-  const firstLinePhotos = currentPhotos.slice(
-    0,
-    Math.ceil(currentPhotos.length / 2)
-  ); // Primeira linha
-  const secondLinePhotos = currentPhotos.slice(
-    Math.ceil(currentPhotos.length / 2)
-  ); // Segunda linha
+  // Reinicia a barra de progresso ao trocar de página manualmente
+  const handlePageChange = (index: number) => {
+    setCurrentIndex(index);
+    setProgress(0); // Reinicia o progresso
+  };
 
   return (
-    <div className="relative my-6 flex-col gap-4 w-full flex justify-center items-center">
-      {/* Carrossel de imagens - Primeira linha */}
-      <div className="flex gap-4 w-max">
-        {firstLinePhotos.map((photo, index) => (
+    <div className="relative my-6 flex flex-col gap-4 w-full max-w-[1024px] justify-center items-center">
+      {/* Carrossel de fotos */}
+      <div
+        className="flex relative w-full gap-4 transition-transform duration-700 ease-in-out"
+        style={{
+          transform: `translateX(-${currentIndex * 100}%)`, // Desloca as imagens conforme o índice
+        }}
+      >
+        {Array.from({ length: totalPages }).map((_, i) => (
           <div
-            key={index}
-            className={`relative overflow-hidden rounded-3xl bg-green-800/10 h-[200px] ${
-              firstRowPatterns[index % firstRowPatterns.length]
-            }`}
+            key={i}
+            className="grid w-full gap-4 grid-cols-[300px_300px_300px] grid-rows-[300px_300px]"
           >
-            <Image
-              src={photo.url}
-              alt={photo.alt}
-              layout="fill"
-              objectFit="cover"
-            />
+            {photos.slice(5 * i, 5 * (i + 1)).map((photo, index) => (
+              <div
+                key={index}
+                className={`relative overflow-hidden rounded-3xl bg-green-800/10 h-[300px] ${
+                  index === 3 ? "col-span-2" : ""
+                }`}
+              >
+                <Image
+                  src={photo.url}
+                  alt={photo.alt}
+                  fill
+                  style={{
+                    objectFit: "cover",
+                  }}
+                  priority
+                  sizes=" (max-width: 1200px) 100vw, 50vw, 33vw"
+                />
+              </div>
+            ))}
           </div>
         ))}
       </div>
 
-      {/* Carrossel de imagens - Segunda linha */}
-      <div className="flex gap-4 w-max">
-        {secondLinePhotos.map((photo, index) => (
-          <div
-            key={index}
-            className={`relative overflow-hidden rounded-3xl bg-green-800/10 h-[200px] ${
-              secondRowPatterns[index % secondRowPatterns.length]
-            }`}
-          >
-            <Image
-              src={photo.url}
-              alt={photo.alt}
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-        ))}
-      </div>
-
-      {/* Pontos de navegação */}
-      <div className=" flex items-center gap-2 h-4 mb-4">
-        {Array.from({ length: totalPages }).map((_, index) => {
-          return (
-            <button
+      {/* Controles de navegação */}
+      <div className="flex items-center justify-center w-full mt-4 px-4 gap-4">
+        {/* Pontos de navegação com barra de progresso */}
+        <div className="flex items-center gap-2">
+          {Array.from({ length: totalPages }).map((_, index) => (
+            <div
               key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full bg-gray-400 transition-all duration-300 ${
-                currentIndex == index ? "bg-green-800 w-5 h-5" : ""
-              }`}
-            ></button>
-          );
-        })}
+              className="relative flex items-center justify-center  h-4"
+            >
+              <button
+                id={`${index}`}
+                onClick={() => handlePageChange(index)}
+                className={`h-4 rounded-full bg-gray-400 transition-all duration-300 overflow-hidden ${
+                  currentIndex === index ? "bg-green-800 w-12" : "w-4 "
+                }`}
+              >
+                {currentIndex === index && (
+                  <div
+                    className=" h-4 rounded-full bg-green-950 transition-all"
+                    style={{
+                      width: `${progress}%`, // Largura da barra de progresso
+                    }}
+                  ></div>
+                )}
+              </button>
+            </div>
+          ))}
+        </div>
+
+        {/* Botão de Pausa/Play */}
+        <button
+          onClick={() => setIsPaused((prev) => !prev)}
+          className=" p-1 bg-green-800 text-white rounded-full hover:bg-green-700 transition-all"
+        >
+          {isPaused ? (
+            <Image alt="" src={"/icons/play-fill.svg"} width={12} height={12} />
+          ) : (
+            <Image
+              alt=""
+              src={"/icons/pause-fill.svg"}
+              width={12}
+              height={12}
+            />
+          )}
+        </button>
       </div>
     </div>
   );

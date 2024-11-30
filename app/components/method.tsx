@@ -4,7 +4,10 @@ import { photosURL } from "../data/fotosUrls";
 
 export const Method = () => {
   return (
-    <section id="method" className="flex flex-col w-max-[1024px]">
+    <section
+      id="method"
+      className="flex flex-col overflow-hidden w-max-[1024px]"
+    >
       <h1 className="text-3xl font-bold mb-4">
         Como funciona o método escoteiro?
       </h1>
@@ -21,18 +24,9 @@ export const Method = () => {
         jovens, divididos por faixa etária, aprendem habilidades e valores
         essenciais para a vida.
       </p>
+
       <PhotoGallery photos={photosURL} />
-      {/* <div className="overflow-hidden my-6 w-full flex flex-col gap-4">
-        <div className="flex gap-4">
-          <div className="w-[380px] rounded-3xl bg-slate-800 h-[200px] "></div>
-          <div className="w-[200px] rounded-3xl bg-slate-800 h-[200px] "></div>
-          <div className="w-[125px] rounded-3xl bg-slate-800 h-[200px] "></div>
-        </div>
-        <div className="flex gap-4">
-          <div className="w-[220px] rounded-3xl bg-slate-800 h-[200px] "></div>
-          <div className="w-[500px] rounded-3xl bg-slate-800 h-[200px] "></div>
-        </div>
-      </div> */}
+
       <h2 className="font-bold text-2xl text-green-900 mb-2">
         O nosso objetivo
       </h2>

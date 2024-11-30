@@ -33,8 +33,8 @@ export const MainCard = () => {
         className="absolute right-[-250px] bottom-[-100px]"
       />
       <a
-        href="#metodo"
-        className="p-4 text-base bg-green-950 text-green-50 w-fit flex justify-center items-center rounded-full gap-4 cursor-pointer hover:bg-green-950/90 transition-all"
+        href="#method"
+        className=" p-4 text-base bg-green-950 text-green-50 w-fit flex justify-center items-center rounded-full gap-4 cursor-pointer hover:bg-green-950/90 transition-all"
       >
         Conheça o método escoteiro
         <Image

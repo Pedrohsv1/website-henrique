@@ -8,7 +8,7 @@ import { Sections } from "./components/sections";
 
 export default function Home() {
   return (
-    <main className=" p-6 max-w-[1024px] w-full flex flex-col gap-12">
+    <main className=" p-6 max-w-[1024px] w-full flex flex-col scroll-smooth gap-12">
       <section className="grid gap-4 grid-cols-4 grid-rows-[350px_350px]">
         <MainCard />
         <SecondCard />

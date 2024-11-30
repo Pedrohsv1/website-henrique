@@ -16,7 +16,7 @@ export const FourthCard = () => {
       .catch((err) => console.error("Erro ao copiar:", err));
   };
   return (
-    <div className="group col-span-2 flex flex-col p-6 justify-between relative w-full h-full overflow-hidden hover:bg-green-50/10">
+    <div className="group md:flex col-span-2 hidden flex-col p-6 justify-between relative w-full h-full overflow-hidden hover:bg-green-50/10">
       <div></div>
       <button
         onClick={handleCopy}
