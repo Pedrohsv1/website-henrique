@@ -22,9 +22,9 @@ export default function RootLayout({
   const interClassName = inter.className; // Garante consistência
 
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${interClassName}  text-green-950 bg-white antialiased flex flex-col w-full min-h-screen  items-center `}
+        className={`${interClassName}  text-green-950 bg-white antialiased flex flex-col w-full min-h-screen items-center `}
       >
         <Menu />
         {children}
