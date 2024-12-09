@@ -12,6 +12,7 @@ export const SecondCard = () => {
         loop
         muted
         controls={false}
+        playsInline
         preload="none"
         className="w-full h-full object-cover rounded-[32px]"
       >
