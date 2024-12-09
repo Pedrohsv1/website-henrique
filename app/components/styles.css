@@ -3,7 +3,7 @@
   height: 100%;
   border-radius: 4px;
   overflow: hidden;
-  --scrollbar-size: 15px;
+  --scrollbar-size: 8px;
 }
 
 .ScrollAreaViewport {
@@ -22,26 +22,32 @@
 
   margin-top: 20px;
 
-  padding: 2px;
-  background: #d9d9d9;
+  padding: px;
+  background: #d9d9d97a;
   transition: background 160ms ease-out;
 }
 .ScrollAreaScrollbar:hover {
-  background: #d9d9d9;
+  background: transparent;
+  --scrollbar-size: 15px;
+  transition: height 200ms ease-out;
 }
 .ScrollAreaScrollbar[data-orientation="vertical"] {
   width: var(--scrollbar-size);
 }
 .ScrollAreaScrollbar[data-orientation="horizontal"] {
+  transition: height 200ms ease-out;
   flex-direction: column;
   height: var(--scrollbar-size);
 }
 
 .ScrollAreaThumb {
   flex: 1;
-  background: #2b2d2c5b;
-  border-radius: 5px;
+  background: #27292886;
   position: relative;
+}
+
+.ScrollAreaThumb:hover {
+  background: #272928dc;
 }
 /* increase target size for touch devices https://www.w3.org/WAI/WCAG21/Understanding/target-size.html */
 .ScrollAreaThumb::before {
