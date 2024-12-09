@@ -3,7 +3,10 @@ import Image from "next/image";
 
 export const ThirdCard = () => {
   return (
-    <div className="group relative w-full h-full overflow-hidden md:col-span-1 col-span-2 hover:bg-green-50/10">
+    <a
+      href="#projects"
+      className="group relative w-full h-full overflow-hidden md:col-span-1 col-span-2 hover:bg-green-50/10"
+    >
       {/* Image */}
       <Image
         src="/projeto-pio.png"
@@ -13,11 +16,11 @@ export const ThirdCard = () => {
         className="absolute top-0 left-0 w-full h-full object-cover rounded-[32px]"
       />
       {/* Tag */}
-      <p className=" md:left-[24px] md:top-[24px] left-[16px] top-[16px] bg-green-50 text-green-950 absolute px-4 py-1 border border-green-50 rounded-full w-fit">
+      <p className="text-sm md:text-base md:left-[24px] md:top-[24px] left-[16px] top-[16px] bg-green-50 text-green-950 absolute px-4 py-1 border border-green-50 rounded-full w-fit">
         Projetos
       </p>
       {/* Name */}
-      <p className=" absolute w-full flex justify-center group-hover:translate-y-[-4px] transition-transform text-green-50 md:bottom-[24px] bottom-[16px] left-1/2 -translate-x-1/2 z-10">
+      <p className="text-sm md:text-base absolute w-full flex justify-center group-hover:translate-y-[-4px] transition-transform text-green-50 md:bottom-[24px] bottom-[16px] left-1/2 -translate-x-1/2 z-10">
         <b>Projeto Pioneiro</b>
       </p>
       {/* Gradient */}
@@ -31,6 +34,6 @@ export const ThirdCard = () => {
           alt={""}
         />
       </div>
-    </div>
+    </a>
   );
 };

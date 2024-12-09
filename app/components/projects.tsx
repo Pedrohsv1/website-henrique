@@ -1,24 +1,23 @@
 import React from "react";
-import { sections } from "../data/data";
+import { projects } from "../data/data";
 import { Card } from "./card";
 import * as ScrollArea from "@radix-ui/react-scroll-area";
 import "./styles.css";
 
-export const Sections = () => {
+export const Projects = () => {
   return (
-    <section id="section">
-      <h1 className="text-3xl font-bold mb-4">Seções</h1>
+    <section id="projects">
+      <h1 className="text-3xl font-bold mb-4">Projetos</h1>
       {/* Cards */}
       <ScrollArea.Root className="ScrollAreaRoot">
         <ScrollArea.Viewport className="ScrollAreaViewport">
           <div className="flex overflow-x-scroll gap-4">
-            {sections.map((section) => (
+            {projects.map((project) => (
               <Card
-                name={section.name}
-                subtitle={section.idade}
-                url={section.url}
-                color={section.color}
-                key={section.name}
+                name={project.name}
+                subtitle={project.creator}
+                url={project.url}
+                key={project.name}
               />
             ))}
           </div>

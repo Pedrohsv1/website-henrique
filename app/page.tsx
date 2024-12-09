@@ -5,6 +5,7 @@ import { SecondCard } from "./components/second-card";
 import { ThirdCard } from "./components/third-card";
 import { Method } from "./components/method";
 import { Sections } from "./components/sections";
+import { Projects } from "./components/projects";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
       <Method />
       <div className="w-full h-[1px] bg-gray-200"></div>
       <Sections />
+      <div className="w-full h-[1px] bg-gray-200"></div>
+      <Projects />
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
     </main>
   );

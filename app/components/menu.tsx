@@ -12,7 +12,7 @@ export const Menu = () => {
             width={40}
             height={40}
           />
-          <div className="text-green-950 font-bold">
+          <div className="text-green-950 font-bold hidden md:block">
             <p>Henrique</p>
             <p>Castriciano</p>
           </div>
@@ -40,7 +40,7 @@ export const Menu = () => {
               width={24}
               height={24}
             />
-            <p>Nossa história</p>
+            <p>História</p>
           </Link>
         </div>
       </div>

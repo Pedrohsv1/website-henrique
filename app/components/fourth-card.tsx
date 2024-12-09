@@ -20,7 +20,7 @@ export const FourthCard = () => {
       <div></div>
       <button
         onClick={handleCopy}
-        className="flex border p-2 gap-2  items-center rounded-full transition-all border-green-950  hover:bg-green-950/30 z-10 font-bold text-green-950"
+        className="overflow-hidden flex border p-2 gap-2  items-center rounded-full transition-all border-green-950  hover:bg-green-950/30 z-10 font-bold text-green-950"
       >
         <div className="flex bg-green-950 hover:bg-green-950/90 p-2 px-4 gap-2 h-full rounded-full text-green-50 font-normal justify-center items-center">
           <div>{copied ? "Copiado!" : "Copiar"}</div>

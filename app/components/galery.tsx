@@ -56,12 +56,12 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos }) => {
         {Array.from({ length: totalPages }).map((_, i) => (
           <div
             key={i}
-            className="grid w-full gap-4 grid-cols-[300px_300px_300px] grid-rows-[300px_300px]"
+            className="grid w-full gap-4 grid-cols-[80px_80px_80px]  sm:grid-cols-[180px_180px_180px] md:grid-cols-[200px_200px_200px] lg:grid-cols-[300px_300px_300px]  grid-rows-[200px_200px] lg:grid-rows-[300px_300px]"
           >
             {photos.slice(5 * i, 5 * (i + 1)).map((photo, index) => (
               <div
                 key={index}
-                className={`relative overflow-hidden rounded-3xl bg-green-800/10 h-[300px] ${
+                className={`relative overflow-hidden rounded-3xl bg-green-800/10 h-[200] lg:h-[300px] ${
                   index === 3 ? "col-span-2" : ""
                 }`}
               >
