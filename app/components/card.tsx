@@ -28,6 +28,7 @@ export const Card = ({ name, subtitle, url, color }: CardProps) => {
           style={{
             objectFit: "cover",
           }}
+          quality={100}
           priority
           sizes=" (max-width: 1200px) 100vw, 70vw, 20vw"
         />

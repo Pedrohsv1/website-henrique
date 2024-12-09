@@ -13,7 +13,7 @@ export const ThirdCard = () => {
         alt="Projeto Alguém Puxa"
         height={300}
         width={300}
-        className="absolute top-0 left-0 w-full h-full object-cover rounded-[32px]"
+        className="absolute top-0 left-0 w-full h-full object-cover rounded-[32px] animate-slow-spin"
       />
       {/* Tag */}
       <p className="text-sm md:text-base md:left-[24px] md:top-[24px] left-[16px] top-[16px] bg-green-50 text-green-950 absolute px-4 py-1 border border-green-50 rounded-full w-fit">
