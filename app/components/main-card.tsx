@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const MainCard = () => {
   return (
-    <div className="p-8 flex flex-col gap-4 col-span-4 w-full h-full rounded-[32px] bg-green-100 overflow-hidden relative">
+    <div className="p-8 flex flex-col justify-between gap-4 col-span-4 w-full h-full rounded-[32px] bg-green-100 overflow-hidden relative">
       <p className="px-4 py-1 border border-green-950 rounded-full w-fit">
         Escotismo
       </p>
