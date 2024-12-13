@@ -113,7 +113,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos }) => {
         {/* Botão de Pausa/Play */}
         <button
           onClick={() => setIsPaused((prev) => !prev)}
-          className=" p-1 bg-green-800 text-white rounded-full hover:bg-green-700 transition-all"
+          className=" p-1 bg-green-800 text-white rounded-full hover:bg-green-700 transition-all size-4 flex justify-center items-center  "
         >
           {isPaused ? (
             <Image alt="" src={"/icons/play-fill.svg"} width={12} height={12} />

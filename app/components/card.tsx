@@ -1,15 +1,19 @@
 import Image from "next/image";
 
 type CardProps = {
+  id: string;
   name: string;
   subtitle?: string;
   url: string;
   color?: string;
 };
 
-export const Card = ({ name, subtitle, url, color }: CardProps) => {
+export const Card = ({ id, name, subtitle, url, color }: CardProps) => {
   return (
-    <div className="flex flex-col h-[400px] w-[260px] bg-green-200 rounded-3xl hover:bg-green-100 p-6">
+    <a
+      href={"section/" + id}
+      className="flex flex-col h-[400px] w-[260px] bg-green-200 rounded-3xl hover:bg-green-100 p-6"
+    >
       <h2
         className={"text-red-700 text-2xl font-bold"}
         style={{ color: color }}
@@ -33,6 +37,6 @@ export const Card = ({ name, subtitle, url, color }: CardProps) => {
           sizes=" (max-width: 1200px) 100vw, 70vw, 20vw"
         />
       </div>
-    </div>
+    </a>
   );
 };

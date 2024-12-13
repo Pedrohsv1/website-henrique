@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 export const MainCard = () => {
@@ -7,7 +6,7 @@ export const MainCard = () => {
       <p className="px-4 py-1 border border-green-950 rounded-full w-fit">
         Escotismo
       </p>
-      <h1 className="text-[20px] md:text-2xl w-full max-w-[250px] sm:max-w-[250px] md:max-w-[550px]">
+      <h1 className="text-[20px] text-green-950 md:text-2xl w-full max-w-[250px] sm:max-w-[250px] md:max-w-[550px]">
         <b>
           Um movimento de jovens e para jovens que busca a construção de um
           mundo melhor!

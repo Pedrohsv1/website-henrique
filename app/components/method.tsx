@@ -1,6 +1,5 @@
-import React from "react";
-import { PhotoGallery } from "./galery";
 import { photosURL } from "../data/fotosUrls";
+import { PhotoGallery } from "./galery";
 
 export const Method = () => {
   return (
@@ -8,13 +7,13 @@ export const Method = () => {
       id="method"
       className="flex flex-col overflow-hidden w-max-[1024px]"
     >
-      <h1 className="text-3xl font-bold mb-4">
+      <h1 className="text-3xl text-green-950 font-bold mb-4">
         Como funciona o método escoteiro?
       </h1>
       <h2 className="font-bold text-2xl text-green-900 mb-2">
         Nosso jeitinho de ser
       </h2>
-      <p className="">
+      <p className="leading-relaxed">
         O Movimento Escoteiro é um espaço dinâmico e envolvente para jovens, que
         se desenvolve com a ajuda de voluntários adultos. Com atividades
         variadas e atraentes, o Escotismo encoraja os jovens a assumirem seu
@@ -30,7 +29,7 @@ export const Method = () => {
       <h2 className="font-bold text-2xl text-green-900 mb-2">
         O nosso objetivo
       </h2>
-      <p className="">
+      <p className="leading-relaxed">
         A proposta educativa do Escotismo visa formar pessoas responsáveis,
         autônomas e solidárias, sempre baseadas nos valores da Lei e Promessa
         Escoteira. Através de ações locais, mas com um pensamento global, o
@@ -39,23 +38,23 @@ export const Method = () => {
         ajuda a criar cidadãos ativos e conscientes, preparados para enfrentar
         os desafios do mundo e contribuir para um futuro melhor.
       </p>
-      <h2 className="font-bold text-2xl text-green-900 mb-2 mt-4">
-        Links auxiliares
-      </h2>
-      <a
-        target="_blank"
-        href="https://www.escoteiros.org.br/projeto-educativo/?doing_wp_cron=1732843654.9171431064605712890625"
-        className="text-green-600 hover:text-green-800 hover:underline"
-      >
-        Escoteiros do Brasil: Projeto Educacional
-      </a>
-      <a
-        target="_blank"
-        href="https://www.escoteiros.org.br/metodo-escoteiro/?doing_wp_cron=1732843413.1515779495239257812500"
-        className="text-green-600 hover:text-green-800 hover:underline"
-      >
-        Escoteiros do Brasil: Método Escoteiro
-      </a>
+      <div className=" bg-gray-100 rounded-3xl p-8 mt-8">
+        <h2 className="font-bold text-green-900 mb-2">Links auxiliares</h2>
+        <a
+          target="_blank"
+          href="https://www.escoteiros.org.br/projeto-educativo/?doing_wp_cron=1732843654.9171431064605712890625"
+          className="text-green-600 hover:text-green-800 text-sm hover:underline block"
+        >
+          Escoteiros do Brasil: Projeto Educacional
+        </a>
+        <a
+          target="_blank"
+          href="https://www.escoteiros.org.br/metodo-escoteiro/?doing_wp_cron=1732843413.1515779495239257812500"
+          className="text-green-600 hover:text-green-800 text-sm hover:underline block"
+        >
+          Escoteiros do Brasil: Método Escoteiro
+        </a>
+      </div>
     </section>
   );
 };

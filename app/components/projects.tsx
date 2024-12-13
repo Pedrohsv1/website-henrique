@@ -1,8 +1,6 @@
-import React from "react";
+import * as ScrollArea from "@radix-ui/react-scroll-area";
 import { projects } from "../data/data";
 import { Card } from "./card";
-import * as ScrollArea from "@radix-ui/react-scroll-area";
-import "./styles.css";
 
 export const Projects = () => {
   return (
@@ -14,6 +12,7 @@ export const Projects = () => {
           <div className="flex overflow-x-scroll gap-4">
             {projects.map((project) => (
               <Card
+                id={project.id}
                 name={project.name}
                 subtitle={project.creator}
                 url={project.url}

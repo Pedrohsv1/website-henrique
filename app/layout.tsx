@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import { Menu } from "./components/menu";
+
+import "./globals.css";
 
 // Load Inter font with specific weights
 const inter = Inter({
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${interClassName}  text-green-950 bg-white antialiased flex flex-col w-full min-h-screen items-center `}
+        className={`${interClassName}  text-gray-900 bg-white antialiased flex flex-col w-full min-h-screen items-center `}
       >
         <Menu />
         {children}
