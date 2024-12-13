@@ -18,6 +18,7 @@ export const Sections = () => {
                 url={section.url}
                 color={section.color}
                 key={section.name}
+                isSection
               />
             ))}
           </div>

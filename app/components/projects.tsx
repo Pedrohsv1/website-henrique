@@ -17,6 +17,7 @@ export const Projects = () => {
                 subtitle={project.creator}
                 url={project.url}
                 key={project.name}
+                isSection={false}
               />
             ))}
           </div>

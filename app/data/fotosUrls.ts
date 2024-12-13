@@ -52,7 +52,7 @@ export const photosURL = [
   },
   {
     alt: "Promessa, progressão escoteira, de alguns lobinhos",
-    url: "https://lh3.googleusercontent.com/pw/AP1GczPS0L6zsH7cirEpLUDrWt-_7Z_HJgKemR4uWtH7XDaPvhcle9aOWuRXazen6J0rbtqzzefg2OUX5SAgCT9rf66S8TAWrOok-qCCIPVjNTvMtsEuauAjWHFGTjsKqtiFR8JQfTawvZPxGD_--SaHo7xQ=w1777-h1333-s-no-gm?authuser=0",
+    url: "https://lh3.googleusercontent.com/pw/AP1GczPapIOMlCffCOXCVQYMP_tALaU0fmwna9ljHduvxiQgf73cajcU-ymftD5brpWSzoEvRmgBAn7QSNkStb7rZ-pHG2UvA8T5gukeli7mhC1usL5GYV_nRPfwar2fP2NWG273MFhK8lp5V9UgqhxuZ6N4ng=w1600-h1197-s-no-gm?authuser=0",
     wh: [1777, 1333],
   },
 

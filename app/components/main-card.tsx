@@ -23,7 +23,7 @@ export const MainCard = () => {
         height={770}
         width={1110.836}
         //className="absolute right-[-250px] bottom-[-150px] z-10"
-        className="absolute right-[-80px] bottom-[-50px] md:right-[-250px] md:bottom-[-150px] z-10"
+        className="hidden md:absolute right-[-80px] bottom-[-50px] md:right-[-250px] md:bottom-[-150px] z-10"
       />
       <Image
         src={"/curves.svg"}

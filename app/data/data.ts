@@ -1,5 +1,3 @@
-import { v4 as uuid } from "uuid";
-
 export const sections = [
   {
     id: "17d2f5f5-e6be-4c9c-afc2-ead62b0c8033",
@@ -33,14 +31,14 @@ export const sections = [
 
 export const projects = [
   {
-    id: uuid(),
+    id: "88d74695-26f3-4d82-b362-ae0c64cf4dc5",
     name: "Alguém puxa!",
     creator: "Pedro Costa",
     url: "/projects/alguempuxa.png",
   },
   {
-    id: uuid(),
-    name: "Site Henrique",
+    id: "f0967b4e-60bf-4016-ba2f-591e28539a13",
+    name: "ClickScout",
     creator: "Pedro Varela",
     url: "/projects/sitehenrique.png",
   },

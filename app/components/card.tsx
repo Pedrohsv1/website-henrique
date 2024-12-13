@@ -6,12 +6,20 @@ type CardProps = {
   subtitle?: string;
   url: string;
   color?: string;
+  isSection?: boolean;
 };
 
-export const Card = ({ id, name, subtitle, url, color }: CardProps) => {
+export const Card = ({
+  id,
+  name,
+  subtitle,
+  url,
+  color,
+  isSection,
+}: CardProps) => {
   return (
     <a
-      href={"section/" + id}
+      href={isSection ? `/section/${id}` : `/projects/${id}`}
       className="flex flex-col h-[400px] w-[260px] bg-green-200 rounded-3xl hover:bg-green-100 p-6"
     >
       <h2
