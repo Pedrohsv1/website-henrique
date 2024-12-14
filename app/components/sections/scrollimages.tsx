@@ -23,7 +23,7 @@ export const SectionImagesRamo = ({ data }: { data: (typeof sections)[0] }) => {
     <ScrollArea.Root className="ScrollAreaRoot">
       <ScrollArea.Viewport className="ScrollAreaViewport">
         <div className="flex gap-4">
-          <div className="relative w-[300px] max-h-96 rounded-[32px] overflow-hidden">
+          <div className="relative w-[300px] h-96 rounded-[32px] overflow-hidden">
             <Image
               src={`/sections/${data.name.toLocaleLowerCase()}/${data.name.toLocaleLowerCase()}_1.jpg`}
               alt="Photo 1"
@@ -31,7 +31,7 @@ export const SectionImagesRamo = ({ data }: { data: (typeof sections)[0] }) => {
               className="object-cover"
             />
           </div>
-          <div className="relative w-[300px] max-h-96">
+          <div className="relative w-[300px] h-96">
             <video
               autoPlay
               loop
@@ -47,7 +47,7 @@ export const SectionImagesRamo = ({ data }: { data: (typeof sections)[0] }) => {
               Your browser does not support the video tag.
             </video>
           </div>
-          <div className="relative w-[300px] max-h-96 rounded-[32px] overflow-hidden">
+          <div className="relative w-[300px] h-96 rounded-[32px] overflow-hidden">
             <Image
               src={`/sections/${data.name.toLocaleLowerCase()}/${data.name.toLocaleLowerCase()}_3.jpg`}
               alt="Photo 3"
