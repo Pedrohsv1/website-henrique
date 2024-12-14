@@ -38,7 +38,6 @@ export const SectionImagesRamo = ({ data }: { data: (typeof sections)[0] }) => {
               muted
               controls={false}
               playsInline
-              preload="none"
               className="w-full h-full object-cover rounded-[32px]"
             >
               <source
