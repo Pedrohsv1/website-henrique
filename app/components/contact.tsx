@@ -38,7 +38,7 @@ const ContactForm: React.FC = () => {
       if (!emailRegex.test(value)) {
         setErrors({ ...errors, email: "Email inválido ;(" });
       } else {
-        const { email, ...rest } = errors;
+        const { _, ...rest } = errors;
         setErrors(rest);
       }
     } else {
@@ -46,7 +46,7 @@ const ContactForm: React.FC = () => {
       if (!value) {
         setErrors({ ...errors, [name]: "Esse campo é obrigatório" });
       } else {
-        const { [name]: fieldError, ...rest } = errors;
+        const { [name]: _, ...rest } = errors;
         setErrors(rest);
       }
     }
