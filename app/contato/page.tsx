@@ -13,7 +13,7 @@ const Contato = () => {
             Atendimento presencial sábado. <br />
             Das 14h30 às 17h.
           </p>
-          <div className="w-[400px] h-[300px] relative mt-4 rounded-lg overflow-hidden">
+          <div className="w-[250px] h-[200px] relative mt-4 rounded-lg overflow-hidden">
             <Image
               alt=""
               src={"/lobinhos.jpg"}
