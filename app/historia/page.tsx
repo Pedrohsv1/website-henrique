@@ -65,14 +65,7 @@ const History = () => {
             Pinto Lopes, Clayton Barreto e Murillo César Brandão Filho, que se
             tornaram os primeiros Escotistas do grupo.
           </p>
-          <p>
-            Objetivando complementar a educação dos jovens envolvidos neste
-            projeto educativo, o escotismo busca forjar o caráter das crianças e
-            adolescentes, sempre preocupado em desenvolver suas plenas
-            potencialidades, numa parceria que busca a formação de valores
-            espirituais, noções de cidadania e princípios de solidariedade que
-            são assumidos pelo jovem em seu dia a dia.
-          </p>
+
           <p>
             Em 2006 a União dos Escoteiros do Brasil, condecorou o patrono da
             Liga de Ensino do RN e fundador do Escotismo no Estado, Henrique
@@ -85,6 +78,44 @@ const History = () => {
             escotismo local.
           </p>
         </div>
+
+        <div className="flex flex-col gap-4">
+          <h2 className="text-xl  text-green-900">
+            <b>Foco do Grupo</b>
+          </h2>
+          <div>
+            <p>
+              Objetivando complementar a educação dos jovens envolvidos neste
+              projeto educativo, o escotismo busca forjar o caráter das crianças
+              e adolescentes, sempre preocupado em desenvolver suas plenas
+              potencialidades, numa parceria que busca a formação de valores
+              espirituais, noções de cidadania e princípios de solidariedade que
+              são assumidos pelo jovem em seu dia a dia.
+            </p>
+          </div>
+          <h2 className="text-xl  text-green-900">
+            <b>Sede campestre</b>
+          </h2>
+          <p>
+            Uma sede campestre organizada é um espaço acolhedor, cercado pela
+            natureza, com áreas verdes para esportes e lazer, alojamentos
+            confortáveis e infraestrutura completa. Conta com campos, salas
+            multiuso e locais para convivência, garantindo conforto e
+            funcionalidade. Ideal para receber jovens, oferece segurança,
+            diversão e momentos inesquecíveis de integração.
+          </p>
+          <div className="flex w-full justify-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.4173935735034!2d-35.194452660144414!3d-5.796560504427875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b3001806db8a79%3A0x879c43a337ce2807!2s52%C2%B0%20Grupo%20Escoteiro%20Henrique%20Castriciano!5e0!3m2!1spt-BR!2sbr!4v1736002145328!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              loading="lazy"
+              allowFullScreen={true}
+              referrerPolicy="no-referrer-when-downgrade"
+              className="rounded-lg"
+            ></iframe>
+          </div>
+        </div>
         <div className="flex flex-col gap-4">
           <h2 className="text-xl  text-green-900">
             <b>Nossas conquistas</b>
@@ -95,19 +126,8 @@ const History = () => {
             </p>
           </div>
         </div>
-        {/* <div className="flex flex-col gap-4">
-          <h2 className="text-xl  text-green-900">
-            <b>História do Grupo</b>
-          </h2>
-          <div>
-            <p>
-               
-            </p>
-          </div>
-        </div> */}
       </div>
 
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
     </main>
   );
 };

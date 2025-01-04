@@ -28,7 +28,21 @@ export const Menu = () => {
               width={24}
               height={24}
             />
-            <p>Home</p>
+            <p className="hidden md:block">Home</p>
+          </Link>
+
+          <Link
+            href={"/contato"}
+            className="flex gap-2 justify-center items-center hover:text-green-900"
+          >
+            <Image
+              src={"/icons/phone-fill.svg"}
+              className=""
+              alt="Inicio"
+              width={24}
+              height={24}
+            />
+            <p className="hidden md:block">Fale conosco</p>
           </Link>
           <Link
             href={"/historia"}

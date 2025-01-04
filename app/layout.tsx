@@ -30,6 +30,40 @@ export default function RootLayout({
       >
         <Menu />
         {children}
+        <footer className="p-6 bg-white flex w-full  justify-center items-center border-t border-gray-200">
+          <div className="flex p-6 max-w-[1024px] w-full justify-between">
+            <div>
+              <p>Grupo Escoteiro Henrique Castriciano</p>
+              <ul>
+                <li>
+                  <a
+                    className="text-green-600 hover:text-green-800 hover:underline text-sm"
+                    href="https://maps.app.goo.gl/NkZgfP19BNGi2UFn6"
+                  >
+                    Sede campestre: Local das atividades
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-green-600 hover:text-green-800 hover:underline text-sm"
+                    href="https://cenr.com.br/"
+                  >
+                    Escola Noilde Ramalho
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-green-600 hover:text-green-800 hover:underline text-sm"
+                    href="https://www.escoteiros.org.br/"
+                  >
+                    Escoteiros do Brasil
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p>©</p>
+          </div>
+        </footer>
       </body>
     </html>
   );
