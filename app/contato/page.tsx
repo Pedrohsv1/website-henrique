@@ -13,18 +13,20 @@ const Contato = () => {
             Atendimento presencial sábado. <br />
             Das 14h30 às 17h.
           </p>
-          <div className="w-[250px] h-[200px] relative mt-4 rounded-lg overflow-hidden">
-            <Image
-              alt=""
-              src={"/lobinhos.jpg"}
-              fill
-              style={{
-                objectFit: "cover",
-              }}
-              quality={100}
-              priority
-              sizes=" (max-width: 1200px) 100vw, 70vw, 20vw"
-            />
+          <div className="flex w-full justify-center md:justify-start">
+            <div className="w-[250px] h-[200px] md:w-full md:h-[300px] relative mt-4 rounded-lg overflow-hidden">
+              <Image
+                alt=""
+                src={"/lobinhos.jpg"}
+                fill
+                style={{
+                  objectFit: "cover",
+                }}
+                quality={100}
+                priority
+                sizes=" (max-width: 1200px) 100vw, 70vw, 20vw"
+              />
+            </div>
           </div>
         </div>
         <ContactForm />

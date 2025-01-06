@@ -81,7 +81,7 @@ const History = () => {
 
         <div className="flex flex-col gap-4">
           <h2 className="text-xl  text-green-900">
-            <b>Foco do Grupo</b>
+            <b>Por que nosso grupo foi criado?</b>
           </h2>
           <div>
             <p>
@@ -127,7 +127,6 @@ const History = () => {
           </div>
         </div>
       </div>
-
     </main>
   );
 };
