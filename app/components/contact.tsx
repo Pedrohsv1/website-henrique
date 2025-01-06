@@ -69,7 +69,7 @@ const ContactForm: React.FC = () => {
         hasError = true;
         console.log(formData[field], field);
       } else if (errors[field]) {
-        newErrors[field] = errors[field]; // Mantém o erro de validação, se houver
+        newErrors[field] = errors[field];
         hasError = true;
         console.log(3);
       }
@@ -102,7 +102,6 @@ const ContactForm: React.FC = () => {
 
   return (
     <div className="w-full md:w-1/2">
-      {/* Efeito de confetes */}
       <h1 className="text-2xl">
         <b>Envie uma mensagem!</b>
       </h1>
@@ -120,7 +119,7 @@ const ContactForm: React.FC = () => {
                 htmlFor="name"
                 className="mb-[10px] block text-base font-medium"
               >
-                Nome
+                Nome <span className="text-gray-500 text-sm">*</span>
               </label>
               <input
                 type="text"
@@ -148,7 +147,7 @@ const ContactForm: React.FC = () => {
                 htmlFor="email"
                 className="mb-[10px] block text-base font-medium "
               >
-                Email
+                Email <span className="text-gray-500 text-sm">*</span>
               </label>
               <div className="relative">
                 <input
@@ -173,7 +172,7 @@ const ContactForm: React.FC = () => {
         </div>
 
         <div className="md:flex gap-4">
-          {/* Outros campos com a mesma estrutura */}
+          {/* Numeral do Grupo */}
           <div className="w-full mt-4 md:w-1/2 lg:w-1/2">
             <div className="mb-4">
               <label
@@ -181,6 +180,7 @@ const ContactForm: React.FC = () => {
                 className="mb-[10px] block text-base font-medium"
               >
                 Numeral do Grupo
+                <span className="text-gray-500 text-sm ml-2">Opcional</span>
               </label>
               <input
                 type="text"
@@ -204,12 +204,13 @@ const ContactForm: React.FC = () => {
           </div>
 
           <div className="w-full mt-4 md:w-1/2 lg:w-1/2">
+            {/* Assunto */}
             <div className="mb-4">
               <label
                 htmlFor="subject"
                 className="mb-[10px] block text-base font-medium"
               >
-                Assunto
+                Assunto <span className="text-gray-500 text-sm">*</span>
               </label>
               <input
                 type="text"
@@ -232,12 +233,14 @@ const ContactForm: React.FC = () => {
           </div>
         </div>
         <div className="w-full ">
+          {/* Messagem */}
+
           <div className="mb-4">
             <label
               htmlFor="message"
               className="mb-[10px] block text-base font-medium"
             >
-              Mensagem
+              Mensagem <span className="text-gray-500 text-sm">*</span>
             </label>
             <textarea
               id="message"
