@@ -48,7 +48,7 @@ export default function RootLayout({
                     className="text-green-600 hover:text-green-800 hover:underline text-sm"
                     href="https://cenr.com.br/"
                   >
-                    Escola Noilde Ramalho
+                    Centro Educacional Noilde Ramalho
                   </a>
                 </li>
                 <li>

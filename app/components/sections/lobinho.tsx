@@ -1,5 +1,3 @@
-import React from "react";
-
 export const RamoLobinho = () => {
   return (
     <div className="flex flex-col space-y-8 text-gray-900">
@@ -8,12 +6,13 @@ export const RamoLobinho = () => {
           Lobinhos no Escotismo: Uma Breve Explicação
         </h2>
         <p>
-          Lobinho é a seção destinada a crianças de <strong>7 a 10 anos</strong>
-          , onde aprendem valores e habilidades básicas através de atividades
-          lúdicas e educativas. Nesta fase, as crianças são incentivadas a
-          desenvolver a socialização, a criatividade e o senso de
-          responsabilidade, participando de jogos, brincadeiras e pequenas
-          tarefas que estimulam o aprendizado e a convivência em grupo
+          Lobinho é a seção destinada a crianças de{" "}
+          <strong>7 a 9 anos incompletos</strong>, onde aprendem valores e
+          habilidades básicas através de atividades lúdicas e educativas. Nesta
+          fase, as crianças são incentivadas a desenvolver a socialização, a
+          criatividade e o senso de responsabilidade, participando de jogos,
+          brincadeiras e pequenas tarefas que estimulam o aprendizado e a
+          convivência em grupo
         </p>
       </div>
 

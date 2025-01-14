@@ -1,5 +1,3 @@
-import React from "react";
-
 export const RamoSenior = () => {
   return (
     <>
@@ -19,8 +17,8 @@ export const RamoSenior = () => {
           </h2>
           <p>
             O Ramo Sênior é a etapa final do Escotismo Juvenil, onde os jovens
-            aprofundam seus valores, desenvolvem habilidades de liderança e se
-            preparam para a vida adulta.
+            entre <strong>15 a 17 anos incompletos</strong> aprofundam seus valores, desenvolvem habilidades de liderança
+            e se preparam para a vida adulta.
           </p>
         </div>
 
@@ -67,7 +65,8 @@ export const RamoSenior = () => {
             Nossas Tropas no Grupo Escoteiro Henrique Castriciano
           </h3>
           <p className="text-gray-700">
-            Tropa Felipe Camarão e Tropa Noilde Ramalho
+            Tropa Varela Santiago, Tropa Sênior do Mar e Tropa Mista Sênior
+            Asteca
           </p>
         </div>
         <div className=" bg-gray-100 rounded-3xl p-8 mt-8">

@@ -7,7 +7,7 @@ export const RamoEscoteiro = () => {
         </h2>
         <p>
           O Ramo Escoteiro é a fase em que os jovens entre{" "}
-          <strong>10 e 15 anos</strong>
+          <strong>10 e 14 anos incompletos </strong>
           descobrem o mundo e a si mesmos através de atividades desafiadoras e
           divertidas. Nessa etapa, os escoteiros aprendem a trabalhar em equipe,
           a tomar decisões, a cuidar da natureza e a servir à comunidade.
