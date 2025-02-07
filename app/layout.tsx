@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Menu } from "./components/menu";
 
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 // Load Inter font with specific weights
@@ -64,6 +65,8 @@ export default function RootLayout({
             <p>©</p>
           </div>
         </footer>
+
+        <Analytics />
       </body>
     </html>
   );
