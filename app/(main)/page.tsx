@@ -1,11 +1,11 @@
 "use client";
-import { FourthCard } from "./components/fourth-card";
-import { MainCard } from "./components/main-card";
-import { SecondCard } from "./components/second-card";
-import { ThirdCard } from "./components/third-card";
-import { Method } from "./components/method";
-import { Sections } from "./components/sections";
-import { Projects } from "./components/projects";
+import { FourthCard } from "../components/fourth-card";
+import { MainCard } from "../components/main-card";
+import { Method } from "../components/method";
+import { Projects } from "../components/projects";
+import { SecondCard } from "../components/second-card";
+import { Sections } from "../components/sections";
+import { ThirdCard } from "../components/third-card";
 
 export default function Home() {
   return (

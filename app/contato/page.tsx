@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CardForms } from "../components/card-forms";
 import ContactForm from "../components/contact";
 
 const Contato = () => {
@@ -6,13 +7,7 @@ const Contato = () => {
     <main className=" p-6 max-w-[1024px] w-full flex flex-col scroll-smooth gap-12 ">
       <div className="md:flex gap-12 ">
         <div className="flex md:w-1/2  md:mb-0 mb-4 justify-center flex-col">
-          <h1 className="text-2xl">
-            <b>Entre em contato com a gente!</b>
-          </h1>
-          <p>
-            Atendimento presencial sábado. <br />
-            Das 14h30 às 17h.
-          </p>
+          <CardForms />
           <div className="flex w-full justify-center md:justify-start">
             <div className="w-[250px] h-[200px] md:w-full md:h-[300px] relative mt-4 rounded-lg overflow-hidden">
               <Image

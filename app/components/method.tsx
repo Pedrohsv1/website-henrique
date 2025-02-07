@@ -1,4 +1,5 @@
 import { photosURL } from "../data/fotosUrls";
+import { CardForms } from "./card-forms";
 import { PhotoGallery } from "./galery";
 
 export const Method = () => {
@@ -55,6 +56,7 @@ export const Method = () => {
           Escoteiros do Brasil: Método Escoteiro
         </a>
       </div>
+      <CardForms />
     </section>
   );
 };
