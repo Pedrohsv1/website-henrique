@@ -57,13 +57,13 @@ export const photosURL = [
   },
 
   {
-    alt: "Sêniors em IBOA, inicio de reunião",
+    alt: "Atividade de pioneiros em uma piscina",
     url: "https://lh3.googleusercontent.com/pw/AP1GczMZ7qZpFLV9fHtwpSrPJenh5ukPNHFs3_nOQE52oXk6ozpHC5yatXggVoqhZwT8wqNnxMPb-dDxRK1-xXHL5kSACfcSc2Uq-k38UQi8CxuOvPnf-YR38qnN7ks5iHYKEiDTj0BJtztbRHe7Th37WJLFIw=w2237-h1259-s-no-gm?authuser=0",
     wh: [2237, 1259],
   },
   {
     alt: "Cabana criada por sêniors",
-    url: "https://lh3.googleusercontent.com/pw/AP1GczM59w85kdzS2NRsBJWwIhle1mL_BZgahHEr3G-bGtc2XVEhhKgkKKMaqZ9FoCkDzSQ0BeIxHM1jZwzRLg5WHv4HIkaDYUv2ZzLUkITgsymLIQbQlmL_N11-QdvShiKwgg8b2LfCyePh5wLNf9e1VKo=w750-h1333-s-no-gm?authuser=0",
+    url: "https://lh3.googleusercontent.com/pw/AP1GczNihBhSJsFGb74sW82jwzDQybVkCewTOUpWNu6FKGhWUDeDJB7v-eaVZvmAIaKezQBhapGi-Ly25T3iyZcFGxhOxC8ySNr0kZ8qh14TY9ZxruxI63Fhepz_VpLJamWIfA48KHw7ApkhmPzVC4oe2_ERgQ=w466-h1009-s-no?authuser=0",
     wh: [750, 1333],
   },
   {
