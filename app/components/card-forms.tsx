@@ -13,7 +13,7 @@ export const CardForms = () => {
       <a
         href="https://forms.gle/ga2fD2P28uZhUHtRA"
         target="_blank"
-        className="p-4 text-base bg-green-950 text-green-50 w-fit h-[56px] hidden md:flex justify-center items-center rounded-full gap-4 cursor-pointer hover:bg-green-950/90 transition-all"
+        className="p-4 text-base bg-green-950 text-green-50 w-fit h-[56px] flex justify-center items-center rounded-full gap-4 cursor-pointer hover:bg-green-950/90 transition-all"
       >
         Ir para o formulário
       </a>
