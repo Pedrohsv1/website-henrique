@@ -17,7 +17,7 @@ export const sections = [
     id: "7b8e5e36-be8d-4e03-89d4-b825459c0b1d",
     name: "Sênior",
     color: "#821825",
-    idade: "14 a 18 anos",
+    idade: "15 a 17 anos",
     url: "/sections/senior.png",
   },
   {
