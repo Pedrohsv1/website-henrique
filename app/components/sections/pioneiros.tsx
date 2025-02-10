@@ -7,10 +7,10 @@ export const RamoPioneiro = () => {
         </h2>
         <p>
           O Ramo Pioneiro é a etapa do Escotismo destinada a jovens entre{" "}
-          <strong>18 e 20 anos incompletos</strong>. Nessa fase, os jovens
-          aprofundam seus valores, desenvolvem habilidades de liderança e se
-          preparam para a vida adulta, através de projetos e atividades que os
-          desafiam a fazer a diferença na sociedade.
+          <strong>18 e 21 anos ( Incompletos )</strong>. Nessa fase, os jovens aprofundam seus
+          valores, desenvolvem habilidades de liderança e se preparam para a
+          vida adulta, através de projetos e atividades que os desafiam a fazer
+          a diferença na sociedade.
         </p>
       </div>
 

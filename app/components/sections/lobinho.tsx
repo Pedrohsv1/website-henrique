@@ -7,12 +7,12 @@ export const RamoLobinho = () => {
         </h2>
         <p>
           Lobinho é a seção destinada a crianças de{" "}
-          <strong>7 a 9 anos incompletos</strong>, onde aprendem valores e
-          habilidades básicas através de atividades lúdicas e educativas. Nesta
-          fase, as crianças são incentivadas a desenvolver a socialização, a
-          criatividade e o senso de responsabilidade, participando de jogos,
-          brincadeiras e pequenas tarefas que estimulam o aprendizado e a
-          convivência em grupo
+          <strong>6,5 ( desde que alfabetizados ) a 10 anos</strong>, onde
+          aprendem valores e habilidades básicas através de atividades lúdicas e
+          educativas. Nesta fase, as crianças são incentivadas a desenvolver a
+          socialização, a criatividade e o senso de responsabilidade,
+          participando de jogos, brincadeiras e pequenas tarefas que estimulam o
+          aprendizado e a convivência em grupo
         </p>
       </div>
 

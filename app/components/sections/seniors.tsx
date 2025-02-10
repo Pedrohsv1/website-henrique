@@ -17,8 +17,9 @@ export const RamoSenior = () => {
           </h2>
           <p>
             O Ramo Sênior é a etapa final do Escotismo Juvenil, onde os jovens
-            entre <strong>15 a 17 anos incompletos</strong> aprofundam seus valores, desenvolvem habilidades de liderança
-            e se preparam para a vida adulta.
+            entre <strong>15 a 17 anos</strong> aprofundam seus valores,
+            desenvolvem habilidades de liderança e se preparam para a vida
+            adulta.
           </p>
         </div>
 
