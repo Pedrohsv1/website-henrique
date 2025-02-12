@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const AlguemPuxa = () => {
   return (
     <div className="flex flex-col space-y-8 text-gray-900">
@@ -11,6 +13,19 @@ export const AlguemPuxa = () => {
           em criar uma coletânea de músicas escoteiras. O objetivo é desenvolver
           um álbum com canções que resgatem a cultura escoteira e incentivem a
           prática do canto no movimento escoteiro.
+        </p>
+      </div>
+      <div className="w-full flex flex-col gap-2 justify-center items-center">
+        <div className="relative md:w-[400px] w-[300px] h-[300px] rounded-3xl overflow-hidden">
+          <Image
+            src="/projects/pessoas/pedro_costa.png"
+            alt="Pedro Costa: Idealizador do projeto Alguém Puxa"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+        <p className="text-sm text-gray-500">
+          Pedro Costa: Idealizador do projeto Alguém Puxa
         </p>
       </div>
       <div className="space-y-4">
